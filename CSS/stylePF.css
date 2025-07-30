@@ -209,7 +209,7 @@ nav {
 .skill-card {
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1.2rem; /* 1 rem = 16px */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: 500;
@@ -221,6 +221,8 @@ nav {
 
 .skill-card:hover {
     transform: scale(1.05);
+    border: 1px solid olivedrab;
+    box-shadow: 0 2px 4px olive;
 }
 
 .skill-card img {
