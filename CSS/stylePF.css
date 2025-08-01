@@ -202,8 +202,11 @@ nav {
 }
 
 .skills {
-    padding-top: 100px;
-    padding-bottom: 25px;
+    padding: 100px;
+}
+
+.skills-header {
+    padding: 25px;
     color: #333;
 }
 
@@ -252,32 +255,52 @@ nav {
     box-shadow: 0 0 12px rgba(107, 142, 35, 0.8);
     transform: translateY(-2px);
 }
+.projects {
+    padding: 100px;
+}
 
-/* Project Cards */
+.project-header {
+    padding: 25px;
+    color: #333;
+}
+
+/* Horizontal / Landscape project cards */
 .project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 200px;
     border: none;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px;
 }
 
-.project-card:hover {
+.project-card.project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 18px rgba(107, 142, 35, 0.3);
+    border: 1px solid olivedrab;
+    box-shadow: 0 2px 4px olive;
 }
 
-.project-card img {
-    height: 200px;
+/* Landscape project image */
+.project-img-landscape {
+    width: 40%; /* Image takes 40% of the card width */
     object-fit: cover;
 }
 
-.project-card .card-title {
-    font-weight: 600;
+/* Card body fills rest of space */
+.project-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.project-card .card-text {
-    font-size: 0.95rem;
-    color: #555;
+/* Ensure same height for all cards */
+.project-card img,
+.project-card .card-body {
+    height: 100%;
 }
 
 .contact-icon {
