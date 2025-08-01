@@ -219,12 +219,12 @@ nav {
 .skill-card {
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 0.8rem 1.2rem;
+    padding: 12px 8px;
     /* 1 rem = 16px */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: 500;
-    min-width: 120px;
+    min-width: 140px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     border-radius: 12px;
@@ -241,9 +241,24 @@ nav {
     object-fit: contain;
 }
 
+/* Mobile Skill Card Fix */
+@media (max-width: 576px) {
+    .skill-card {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .skill-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 .card-title {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 /* Olive Button */
@@ -265,19 +280,26 @@ nav {
 
 .projects {
     padding: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-header {
+.projects-header {
     padding: 25px;
     color: #333;
 }
 
-/* Horizontal / Landscape project cards */
+.projects-cards {
+    justify-content: center;
+    align-items: center;
+}
+
 .project-card {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     min-height: 200px;
+    min-width: 200px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -292,25 +314,39 @@ nav {
     box-shadow: 0 2px 4px olive;
 }
 
-/* Landscape project image */
-.project-img-landscape {
-    width: 40%;
-    /* Image takes 40% of the card width */
+/* Ensure all project images have consistent size */
+.project-img {
+    height: 200px;
     object-fit: cover;
 }
 
-/* Card body fills rest of space */
-.project-card .card-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* Description collapse effect */
+.project-description {
+    overflow: hidden;
+    max-height: 60px;
+    transition: max-height 0.4s ease;
 }
 
-/* Ensure same height for all cards */
-.project-card img,
-.project-card .card-body {
-    height: 100%;
+/* Expanded description */
+.project-description.expanded {
+    max-height: 1000px;
+}
+
+/* Read More button styling */
+.read-more-btn {
+    background: none;
+    border: none;
+    color: olivedrab;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.read-more-btn:hover {
+    color: darkolivegreen;
 }
 
 .contact {
@@ -327,6 +363,7 @@ nav {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
 }
+
 .contact-icon:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px olive;
@@ -335,6 +372,10 @@ nav {
 .contact-form {
     padding-top: 0;
     padding-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 100%;
 }
 
 /* Contact Form Styling */
@@ -350,7 +391,7 @@ nav {
 }
 
 /* Hover Effect for Input Fields */
-.custom-input:hover, 
+.custom-input:hover,
 .custom-input:focus {
     border: 1px solid olivedrab;
     box-shadow: 0 2px 4px olive;
