@@ -220,30 +220,76 @@
 
             <div class="row g-4">
 
-                <!-- Project 1 -->
+                <!-- College Event Management System -->
                 <div class="col-md-12 py-1">
                     <div class="card project-card flex-row shadow-sm">
-                        <img src="./Images/quizN.png" class="project-img-landscape" alt="quizN">
+                        <img src="" class="project-img-landscape" alt="College Event Management System">
                         <div class="card-body">
-                            <h5 class="card-title">quizN</h5>
+                            <h5 class="card-title">College Event Management System</h5>
                             <p class="card-text">
-                                A responsive quiz web app with category selection, timers, answer review and interactive
-                                animations built using HTML, CSS and JavaScript.
+                                A comprehensive web platform to streamline the planning and execution of college events.
+                                Developed using HTML, CSS, JavaScript (Bootstrap) for a mobile-friendly interface,
+                                Spring Boot for backend APIs, and MySQL for structured event data management.
+                                Includes features like event creation, participant registration, real-time updates, and
+                                admin dashboards for efficient event coordination.
                             </p>
                             <a href="#" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Task Manager Application -->
                 <div class="col-md-12 py-1">
                     <div class="card project-card flex-row shadow-sm">
-                        <img src="./Images/Personal Portfolio - V1.1.png" class="project-img-landscape" alt="Personal Portfolio Website">
+                        <img src="" class="project-img-landscape" alt="Task Manager Application">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager Application</h5>
+                            <p class="card-text">
+                                A full-stack web application for creating, tracking, and managing tasks efficiently.
+                                Built with React.js for a responsive and intuitive UI, Spring Boot for backend services,
+                                and MySQL for secure data storage.
+                                Features include task categorization, due-date reminders, status tracking, and
+                                role-based authentication to enhance productivity and collaboration.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- quizN -->
+                <div class="col-md-12 py-1">
+                    <div class="card project-card flex-row shadow-sm">
+                        <img src="./Images/quizN.png" class="project-img-landscape" alt="quizN">
+                        <div class="card-body">
+                            <h5 class="card-title">quizN</h5>
+                            <p class="card-text">
+                                A dynamic, category-based quiz web application designed to deliver an engaging and
+                                interactive user experience.
+                                Developed using HTML, CSS, and JavaScript, with features like category selection, timed
+                                questions, progress tracking, and a final review screen with detailed answer
+                                explanations.
+                                Enhanced with smooth animations, a responsive design, and a bonus question challenge to
+                                keep users engaged across devices.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Portfolio -->
+                <div class="col-md-12 py-1">
+                    <div class="card project-card flex-row shadow-sm">
+                        <img src="./Images/Personal Portfolio - V1.1.png" class="project-img-landscape"
+                            alt="Personal Portfolio Website">
                         <div class="card-body">
                             <h5 class="card-title">Personal Portfolio Website</h5>
                             <p class="card-text">
-                                A modern responsive personal portfolio built using HTML, CSS, Bootstrap and JavaScript
-                                with clean UI.
+                                A fully responsive personal portfolio website showcasing professional skills, projects,
+                                and contact details in a modern, minimalist design.
+                                Built with HTML, CSS, Bootstrap, and JavaScript, featuring smooth scrolling navigation,
+                                interactive skill cards, and a clean single-page layout.
+                                Optimized for all screen sizes with a focus on usability, accessibility, and aesthetic
+                                presentation.
                             </p>
                             <a href="#" class="btn btn-primary mt-auto">View Project</a>
                         </div>
@@ -255,23 +301,45 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-4">Get in Touch</h2>
-            <div class="d-flex justify-content-center gap-5 py-4">
-                <a href="https://wa.me/+919445119275?text=Hi Nithish!" target="_blank" class="contact-icon">
-                    <i class="fab fa-whatsapp fa-3x"></i>
-                </a>
-                <a href="mailto:nithishrajduraip@gmail.com" class="contact-icon">
-                    <i class="fas fa-envelope fa-3x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/nithish-rajadurai-p-700701311" target="_blank"
-                    class="contact-icon">
-                    <i class="fab fa-linkedin fa-3x"></i>
-                </a>
+<section id="contact" class="contact bg-light">
+    <div class="container text-center">
+        <h2 class="contact-header">Get in Touch</h2>
+
+        <!-- Contact Icons -->
+        <div class="contact-icons d-flex justify-content-center gap-5 py-4">
+            <a href="https://wa.me/+919445119275?text=Hi Nithish!" target="_blank" class="contact-icon">
+                <i class="fab fa-whatsapp fa-3x"></i>
+            </a>
+            <a href="mailto:nithishrajduraip@gmail.com" class="contact-icon">
+                <i class="fas fa-envelope fa-3x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nithish-rajadurai-p-700701311" target="_blank" class="contact-icon">
+                <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form row justify-content-center py-2">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control custom-input" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control custom-input" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control custom-input" placeholder="Your Mobile Number">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control custom-input" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-download">Send Message</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
